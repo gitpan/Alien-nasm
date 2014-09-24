@@ -7,7 +7,7 @@ use Env qw( @PATH );
 use File::Spec;
 
 # ABSTRACT: Find or build nasm, the netwide assembler
-our $VERSION = '0.02'; # VERSION
+our $VERSION = '0.03'; # VERSION
 
 
 my $in_path;
@@ -35,7 +35,7 @@ Alien::nasm - Find or build nasm, the netwide assembler
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 

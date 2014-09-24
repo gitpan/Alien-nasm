@@ -7,6 +7,7 @@ build_requires:
   Test::More: '0.94'
 configure_requires:
   Alien::Base: '0.005'
+  Alien::gmake: '0.02'
   Capture::Tiny: '0'
   Module::Build: '0.28'
 dynamic_config: 0
@@ -24,4 +25,4 @@ resources:
   bugtracker: https://github.com/plicease/Alien-nasm/issues
   homepage: http://perl.wdlabs.com/Alien-nasm
   repository: git://github.com/plicease/Alien-nasm.git
-version: '0.02'
+version: '0.03'

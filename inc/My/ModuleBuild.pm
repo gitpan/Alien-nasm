@@ -6,21 +6,13 @@ use base qw( Alien::Base::ModuleBuild );
 use Capture::Tiny qw( capture );
 use Alien::Base::PkgConfig;
 use File::Spec;
-use Config;
+use Alien::gmake;
 
 # this will need to be updated with newer versions!
 # also update inc/pkgconfig/nasm.pc
 my $fetch_version = '2.11.05';
 
-my $make = 'make';
-
-# prefer GNU Make, if it is available
-for($Config{gmake}, $Config{make}, 'gmake', 'make') {
-  my($stdout, $stderr) = capture {
-    system $_, '--version';
-  };
-  $make = $_ if $stdout =~ /GNU Make/;
-}
+my $make = Alien::gmake->exe;
 
 sub new
 {

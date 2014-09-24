@@ -12,6 +12,7 @@ my %module_build_args = (
   },
   "configure_requires" => {
     "Alien::Base" => "0.005",
+    "Alien::gmake" => "0.02",
     "Capture::Tiny" => 0,
     "Module::Build" => "0.28"
   },
@@ -20,7 +21,7 @@ my %module_build_args = (
     "Graham Ollis <plicease\@cpan.org>"
   ],
   "dist_name" => "Alien-nasm",
-  "dist_version" => "0.02",
+  "dist_version" => "0.03",
   "license" => "perl",
   "module_name" => "Alien::nasm",
   "recommends" => {},

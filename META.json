@@ -22,6 +22,7 @@
       "configure" : {
          "requires" : {
             "Alien::Base" : "0.005",
+            "Alien::gmake" : "0.02",
             "Capture::Tiny" : "0",
             "Module::Build" : "0.28"
          }
@@ -51,6 +52,6 @@
          "web" : "https://github.com/plicease/Alien-nasm"
       }
    },
-   "version" : "0.02"
+   "version" : "0.03"
 }
 
