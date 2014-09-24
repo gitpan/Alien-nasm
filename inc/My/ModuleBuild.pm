@@ -6,10 +6,21 @@ use base qw( Alien::Base::ModuleBuild );
 use Capture::Tiny qw( capture );
 use Alien::Base::PkgConfig;
 use File::Spec;
+use Config;
 
 # this will need to be updated with newer versions!
 # also update inc/pkgconfig/nasm.pc
 my $fetch_version = '2.11.05';
+
+my $make = 'make';
+
+# prefer GNU Make, if it is available
+for($Config{gmake}, $Config{make}, 'gmake', 'make') {
+  my($stdout, $stderr) = capture {
+    system $_, '--version';
+  };
+  $make = $_ if $stdout =~ /GNU Make/;
+}
 
 sub new
 {
@@ -18,8 +29,11 @@ sub new
   $args{alien_name} = 'nasm';
   $args{alien_build_commands} = [
     '%c --prefix=%s',
-    'make',
+    "$make",
   ];
+  $args{alien_install_commands} = [
+    "$make install",
+  ],
   $args{alien_repository} = {
     protocol => 'http',
     host     => 'www.nasm.us',

@@ -1,4 +1,7 @@
 Revision history for Alien-nasm
 
+0.02      2014-09-24 11:09:32 -0400
+  - use gmake if it is available when building
+
 0.01      2014-09-24 09:27:30 -0400
   - initial version

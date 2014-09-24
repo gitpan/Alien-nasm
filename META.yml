@@ -24,4 +24,4 @@ resources:
   bugtracker: https://github.com/plicease/Alien-nasm/issues
   homepage: http://perl.wdlabs.com/Alien-nasm
   repository: git://github.com/plicease/Alien-nasm.git
-version: '0.01'
+version: '0.02'
