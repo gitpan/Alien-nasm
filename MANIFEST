@@ -9,7 +9,6 @@ META.yml
 README
 dist.ini
 inc/My/ModuleBuild.pm
-inc/pkgconfig/nasm.pc
 lib/Alien/nasm.pm
 t/00_diag.t
 t/00_diag.txt

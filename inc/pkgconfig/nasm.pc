@@ -1,5 +1,0 @@
-Name: nasm
-Description: Network wide assembler
-Version: 2.11.5
-Libs: 
-Cflags: 

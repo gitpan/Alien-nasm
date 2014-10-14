@@ -1,5 +1,8 @@
 Revision history for Alien-nasm
 
+0.04      2014-10-14 08:05:46 -0400
+  - use Alien::Base 0.006
+
 0.03      2014-09-24 13:42:09 -0400
   - use Alien::gmake to more reliably find GNU Make
 
